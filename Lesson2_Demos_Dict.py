@@ -59,3 +59,15 @@ print("Email: ", student_dict.get("email", "Email not found"))
 #User set method to add a new key-value pair
 student_dict.setdefault("email", "moorthy@example.com")
 print("Dictionary after setting default email:", student_dict)
+
+multiplication_table = {}
+for i in range(1,6):
+    row = []
+    for j in range(1,11):
+        row.append(i * j)
+    multiplication_table[i] = row
+
+print("Multiplication Table:")
+for i, row in multiplication_table.items():
+    print(f"{i}: {row}")
+    
