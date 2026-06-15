@@ -1,0 +1,2 @@
+Final content replacing everything.
+Closing the file explicitly.

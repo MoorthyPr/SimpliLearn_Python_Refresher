@@ -13,10 +13,15 @@ class Dog(Animals):
         self.breed = breed
 
     def fetch(self):
-        return f"{self.name} fetches the ball!"
+        return f"{self.name} the {self.breed} fetches the ball!"
     
 
 
 dog1 = Dog("Buddy","Golden Retriever")
 print(dog1.make_sound())
 print(dog1.fetch())
+
+
+dog2 = Dog("Max","German Shepherd")
+print(dog2.make_sound())
+print(dog2.fetch())
