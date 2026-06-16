@@ -77,14 +77,14 @@ def cave_adventure():
             print("1. Open the first door")
             print("2. Open the second door")
             print("3. Open the third door")
-            cave_answer3 = input("Enter your choice (1, 2, or 3): ")
-            if cave_answer3 == "1":
+            cave_answer5 = input("Enter your choice (1, 2, or 3): ")
+            if cave_answer5 == "1":
                 print("You open the first door and find a treasure! You win!")
                 return
-            elif cave_answer3 == "2":
+            elif cave_answer5 == "2":
                 print("You open the second door and find a trap! Game over!")
                 return
-            elif cave_answer3 == "3":
+            elif cave_answer5 == "3":
                 print("You open the third door and find a monster! Game over!")
                 return
             else:
@@ -104,11 +104,85 @@ def cave_adventure():
         return
     
 def forest_adventure():
-    print("Under construction...")
+    print("Your journey into the Dark Forest begins... Make wise choices!")
+    print("="*50)
+    print("\nWhat will you do next?")
+    print("1. Take a boat and cross the river")
+    print("2. Climb the tree")
+    print("3. Turn back")
 
+    forest_answer1 = input("Enter your choice (1, 2, or 3): ")
 
+    if forest_answer1 == "1":
+        print("You hit a rock and boat is sinking.")
+        print("\nWhat will you do next?")
+        print("1. Row fast and try to reach the shore")
+        print("2. Jump into the water and swim to the shore")
+        forest_answer2 = input("Enter your choice (1 or 2): ")
 
+        if forest_answer2 == "1":
+            print("You successfully reached the shore!")
+            print("\nYou see 3 paths in front of you. Choose wisely!")
+            print("1. Choose the left side path")
+            print("2. Choose the middle path")
+            print("3. Choose the right side path")
+            forest_answer3 = input("Enter your choice (1, 2, or 3): ")
+            if forest_answer3 == "1":
+                print("You choose the left side path and find a lion! Game over!")
+                return
+            elif forest_answer3 == "2":
+                print("You choose the middle path and find a tiger! Game over!")
+                return
+            elif forest_answer3 == "3":
+                print("You choose the right side path and find a treasure! You win!")
+                return
+            else:
+                print(f"You made a wrong choice, Game over!")
+                return
+        elif forest_answer2 == "2":
+            print("You jumped into the water and encountered a crocodile! Game over!")
+            return
+        else:
+            print(f"You made a wrong choice, Game over!")
+            return
 
+    elif forest_answer1 == "2":
+        print("You Climb the tree, there is a rope to cross the river and a treasure box on top of the tree.")
+        print("\nWhat will you do next?")
+        print("1. Use the rope to cross the river")
+        print("2. Touch the treasure box")
+        forest_answer4 = input("Enter your choice (1 or 2): ")
+
+        if forest_answer4 == "1":
+            print("\nYou see 3 paths in front of you. Choose wisely!")
+            print("1. Choose the left side path")
+            print("2. Choose the middle path")
+            print("3. Choose the right side path")
+            forest_answer5 = input("Enter your choice (1, 2, or 3): ")
+            if forest_answer5 == "1":
+                print("You choose the left side path and find a lion! Game over!")
+                return
+            elif forest_answer5 == "2":
+                print("You choose the middle path and find a tiger! Game over!")
+                return
+            elif forest_answer5 == "3":
+                print("You choose the right side path and find a treasure! You win!")
+                return
+            else:
+                print(f"You made a wrong choice, Game over!")
+                return
+        elif forest_answer4 == "2":
+            print("You touched the treasue box and lightning struck! Game over!")
+            return
+        else:
+            print(f"You made a wrong choice, Game over!")
+            return
+    elif forest_answer1 == "3":
+        print("\nYou decide to turn back and leave the forest.")
+        return
+    else:
+        print(f"PLayer decided to take rest")
+        return
 
 
 
