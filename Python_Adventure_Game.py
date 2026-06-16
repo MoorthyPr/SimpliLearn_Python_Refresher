@@ -9,11 +9,11 @@ def start_game():
     player_answer = input("Enter your choice (1 or 2): ")
 
     if player_answer == "1":
-        print(f"{player_answer} has chosen the Dark Forest!")
+        print(f"You have chosen the Dark Forest!")
         print("The dark mystery awaits you... Don't wake the sleeping beasts!")
         forest_adventure()
     elif player_answer == "2":
-        print(f"{player_answer} has chosen the Hidden Cave!")
+        print(f"Your have chosen the Hidden Cave!")
         print("The ancient secrets await you... Be cautious of the hidden dangers!")
         cave_adventure()
     else:
@@ -22,6 +22,7 @@ def start_game():
 
 
 def cave_adventure():
+    print("="*50)
     print("Your journey into the Hidden Cave begins... Make wise choices!")
     print("="*50)
     print("\nWhat will you do next?")
@@ -104,6 +105,7 @@ def cave_adventure():
         return
     
 def forest_adventure():
+    print("="*50)
     print("Your journey into the Dark Forest begins... Make wise choices!")
     print("="*50)
     print("\nWhat will you do next?")
