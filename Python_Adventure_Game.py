@@ -1,6 +1,13 @@
 
 
+
+
 def start_game():
+    """Prompt the player to choose a path and start that adventure.
+
+    Uses console I/O to read the player's choice and calls
+    `forest_adventure()` or `cave_adventure()` accordingly.
+    """
 
     print("\nChoose your path:")
     print("1. 🌲 The Dark Forest")
@@ -22,6 +29,12 @@ def start_game():
 
 
 def cave_adventure():
+    """Run the Hidden Cave scenario with nested player choices.
+
+    Presents multiple decision points (move forward / light torch / turn back)
+    and prints the resulting outcomes (win, game over, or return).
+    """
+
     print("="*50)
     print("Your journey into the Hidden Cave begins... Make wise choices!")
     print("="*50)
@@ -105,6 +118,12 @@ def cave_adventure():
         return
     
 def forest_adventure():
+    """Run the Dark Forest scenario with nested player choices.
+
+    Presents multiple decision points (boat / climb tree / turn back)
+    and prints the resulting outcomes (win, game over, or return).
+    """
+
     print("="*50)
     print("Your journey into the Dark Forest begins... Make wise choices!")
     print("="*50)

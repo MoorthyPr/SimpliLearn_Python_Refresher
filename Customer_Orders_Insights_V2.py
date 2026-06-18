@@ -1,8 +1,5 @@
 # Customer names - List of all customer names
 
-# from pprint import pprint
-
-
 customer_names = [
     "John Smith", "Emma Johnson", "Michael Brown", "Sophia Davis",
     "William Wilson", "Olivia Taylor", "James Anderson", "Ava Thomas",
@@ -158,9 +155,7 @@ class Customer:
         top_3_spent_customers = sorted_customer_total_insights[:3]
         for customer, insights in top_3_spent_customers:
             print(f"Customer: {customer}, Total Spent: ${insights[0]}, Customer Type: {insights[1]}")
-  
-        print("\n")
-        print("*"*100)
+
 
 
     '''The build_product_insights method organizes and categorizes all products:
@@ -232,8 +227,6 @@ class Customer:
         for product in unique_products:
             print(f" - {product.capitalize()}")
 
-        print("\n")
-        print("*"*100)
 
 
     '''The build_business_insights method calculates revenue metrics by product category:
@@ -269,8 +262,6 @@ class Customer:
         for product, revenue in product_revenue_dict.items():
             print(f"Product Category: {product}, Revenue: ${revenue}")
 
-        print("\n")
-        print("*"*100)
 
 
     '''The find_customers_by_item method searches and retrieves customer information for a specific product:
@@ -305,8 +296,7 @@ class Customer:
         category = [order[3] for order in customer_orders if order[1].lower() == search_item]
         customer_category_tuple = tuple(customers + category)
 
-        print("\n")
-        print("*"*100)
+
 
 
     '''The find_unique_customers_combo_items method finds common customers between two products:
@@ -344,8 +334,7 @@ class Customer:
                     print(f"No matching customers found for {search_item1} and {search_item2}.")
                 else:
                     print(f"Customers who bought in product category {search_item1} and {search_item2}: {common_customers}")
-        print("\n")
-        print("*"*100)
+
 
     '''The find_all_customers_combo_items method retrieves all customers who purchased either of two products:
 
@@ -382,8 +371,6 @@ class Customer:
                 else:
                     print(f"All of customers who bought products from {search_item1} and {search_item2}: {all_customers}")
 
-        print("\n")
-        print("*"*100)
 
 
 c1 = Customer(customer_names, customer_orders)
