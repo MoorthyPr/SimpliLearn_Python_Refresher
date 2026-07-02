@@ -79,5 +79,5 @@ for trans in transactions:
     print(trans)
 
 
-new_transaction_set = {trans+1 for trans in transactions}
+new_transaction_set = {trans + 1 for trans in transactions}
 print(new_transaction_set)
